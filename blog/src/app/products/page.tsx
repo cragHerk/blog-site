@@ -38,15 +38,21 @@ const photos = [
     height: 150,
   },
 ];
-const Section = () => {
+const Products = () => {
   return (
-    <section id="section" className="bg-gray-300 py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-8">
+    <section
+      id="section"
+      className="bg-gray-300 py-4 flex flex-col justify-center items-center"
+    >
+      <h1 className="text-3xl font-bold  text-slate-700 my-5">
+        Lekcje których udzielam :{" "}
+      </h1>
+      <div className="container mx-auto px-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-4">
           {photos.map((photo) => (
             <div
               key={photo.key}
-              className="bg-white rounded-lg shadow-lg p-6 flex flex-col align-middle items-center lg:m-8 "
+              className="bg-white rounded-lg shadow-lg p-6 flex flex-col align-middle items-center lg:m-2 "
             >
               <Image
                 src={photo.src}
@@ -57,7 +63,7 @@ const Section = () => {
               />
               <h3 className="text-xl font-bold mb-4">Element {photo.key}</h3>
               <p className="text-sm text-gray-700 mb-3 mx-auto">{photo.text}</p>
-              <Link href="/products">
+              <Link href={`/products/${photo.key}`}>
                 <button
                   type="button"
                   className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-300"
@@ -73,4 +79,4 @@ const Section = () => {
   );
 };
 
-export default Section;
+export default Products;

@@ -51,12 +51,18 @@ const Clients = () => {
   const [currentClient, setCurrentClient] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentClient((prevClient) => (prevClient + 1) % clients.length);
-    }, 4000);
+    if (window.innerWidth > 768) {
+      const interval = setInterval(() => {
+        setCurrentClient((prevClient) => (prevClient + 1) % clients.length);
+      }, 4000);
 
-    return () => clearInterval(interval);
+      return () => clearInterval(interval);
+    }
   });
+
+  const displayedClients = clients.slice(currentClient, currentClient + 4);
+  const remainingClients = clients.slice(0, Math.max(0, currentClient - 2));
+  const allClients = [...displayedClients, ...remainingClients];
 
   return (
     <section id="clients" className="bg-gray-300 py-16">
@@ -65,7 +71,7 @@ const Clients = () => {
           What our clients say
         </h2>
         <div className="flex flex-wrap mx-4 justify-center">
-          {clients.slice(currentClient, currentClient + 4).map((client) => (
+          {allClients.map((client) => (
             <div
               key={client.id}
               className="w-[320px] h-[400px] p-8 bg-white rounded-lg shadow-md flex flex-col items-center justify-center mx-4 my-4 "

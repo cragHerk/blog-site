@@ -1,9 +1,11 @@
 import Link from "next/link";
 import React from "react";
-
-const Nav: React.FC<{ links: { label: string; href: string }[] }> = ({
-  links,
-}) => {
+const links = [
+  { label: "Home", href: "/" },
+  { label: "Products", href: "/products" },
+  { label: "Contact", href: "/contacts" },
+];
+const Nav = () => {
   return (
     <nav className="flex items-center justify-between h-16 bg-gray-800 text-white">
       <div className="flex items-center">
