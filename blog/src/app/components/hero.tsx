@@ -1,7 +1,17 @@
+"use client";
+
 import { HiAcademicCap } from "react-icons/hi";
 const Hero = () => {
+  const scrollToSection = () => {
+    const sectionElement = document.getElementById("section");
+    if (sectionElement) {
+      const sectionPosition =
+        sectionElement.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: sectionPosition, behavior: "smooth" });
+    }
+  };
   return (
-    <div className="flex flex-col items-center justify-center h-[calc(90vh)] bg-gray-300 bg-cover bg-center bg-no-repeat bg-[url('/bg.jpg')]">
+    <div className="flex flex-col items-center justify-center h-[calc(100vh)] bg-gray-300 bg-cover bg-center bg-no-repeat bg-[url('/bg.jpg')]">
       <div className="absolute top-[120px] left-[40px] m-4 p-3 rounded-full bg-blue-400 flex justify-center items-center ">
         <HiAcademicCap size={40} />
       </div>
@@ -12,12 +22,12 @@ const Hero = () => {
         <div className="text-xl text-white p-4 mb-8 bg-gray-800 rounded-b-lg shadow-lg">
           Znajdziesz tu informacje o lekcjach jakie prowadzę
         </div>
-        <button
-          type="button"
-          className="p-4 mt-9 text-3xl font-bold text-white bg-blue-500 rounded-full shadow-lg hover:bg-blue-600 hover:scale-110 transition duration-300"
+        <div
+          className="p-4 mt-9 text-3xl font-bold text-white bg-blue-500 rounded-full shadow-lg hover:bg-blue-600 hover:scale-110 transition duration-300 cursor-pointer"
+          onClick={scrollToSection}
         >
           Korepetycje
-        </button>
+        </div>
       </div>
     </div>
   );

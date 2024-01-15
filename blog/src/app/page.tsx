@@ -3,6 +3,8 @@ import React from "react";
 import Nav from "./components/nav";
 import Hero from "./components/hero";
 import Section from "./components/section";
+import Clients from "./components/clients";
+import Footer from "./components/footer";
 
 const HomePage: React.FC = () => {
   const links = [
@@ -16,6 +18,8 @@ const HomePage: React.FC = () => {
       <Nav links={links} />
       <Hero />
       <Section />
+      <Clients />
+      <Footer />
     </div>
   );
 };
