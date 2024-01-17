@@ -54,14 +54,14 @@ const Footer = () => {
           <ul className="text-sm">
             <li className="mb-2">
               <Link href="https://cragherkdev.netlify.app/" legacyBehavior>
-                <a target="_blank" rel="noreferrer" className="flex">
+                <a target="_blank" rel="noreferrer" className="flex p-4">
                   <FaGithubAlt size={30} />
                   <span className="ml-2">Made by cragHerk</span>
                 </a>
               </Link>
             </li>
             <li className="mb-2">
-              <a href="http://www.freepik.com">
+              <a href="http://www.freepik.com" className="p-4">
                 Designed by macrovector / Freepik
               </a>
             </li>
