@@ -23,7 +23,7 @@ const Section = () => {
         return newIsLoading;
       });
       router.push(`/products/${photos[index].key}`);
-    }, 500);
+    }, 1000);
   };
 
   return (
