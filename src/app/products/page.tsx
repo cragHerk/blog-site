@@ -1,17 +1,8 @@
-"use client";
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import photos from "../data/photos";
 
 const Products = () => {
-  const [selectedProductId, setSelectedProductId] = useState<number | null>(
-    null
-  );
-
-  const handleImageClick = (productId: number): void => {
-    setSelectedProductId(productId);
-  };
   return (
     <section
       id="section"

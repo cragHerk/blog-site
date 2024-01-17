@@ -1,12 +1,36 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import photos from "../data/photos";
+import { RingLoader } from "react-spinners";
+
 const Section = () => {
+  const router = useRouter();
+  const [isLoading, setIsLoading] = useState(Array(photos.length).fill(false));
+
+  const handleClick = (index: number) => {
+    setIsLoading((prevIsLoading) => {
+      const newIsLoading = [...prevIsLoading];
+      newIsLoading[index] = true;
+      return newIsLoading;
+    });
+
+    setTimeout(() => {
+      setIsLoading((prevIsLoading) => {
+        const newIsLoading = [...prevIsLoading];
+        newIsLoading[index] = false;
+        return newIsLoading;
+      });
+      router.push(`/products/${photos[index].key}`);
+    }, 500);
+  };
+
   return (
     <section id="section" className="bg-gray-300 py-12">
       <div className="flex justify-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-8">
-          {photos.map((photo) => (
+          {photos.map((photo, index) => (
             <div
               key={photo.key}
               className="bg-white rounded-lg shadow-lg p-6 flex flex-col align-middle items-center max-w-[330px] "
@@ -24,14 +48,16 @@ const Section = () => {
                 {photo.price}$ /godzina
               </p>
 
-              <Link href={`/products/${photo.key}`}>
-                <button
-                  type="button"
-                  className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-300"
-                >
+              <button
+                type="button"
+                className="flex justify-center items-center w-[120px] h-[40px] bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-300"
+                onClick={() => handleClick(index)}
+              >
+                <span className={`${isLoading[index] ? "hidden" : "block"}`}>
                   Zarezerwuj
-                </button>
-              </Link>
+                </span>
+                {isLoading[index] && <RingLoader color="white" size={30} />}
+              </button>
             </div>
           ))}
         </div>
