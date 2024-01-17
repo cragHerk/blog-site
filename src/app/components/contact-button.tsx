@@ -80,10 +80,10 @@ const Popup: React.FC<SpringModalProps> = ({ isOpen, setIsOpen }) => {
                   </Link>
                 </li>
               </ul>
-              <a className="absolute right-[30px] top-[0px] w-[150px] text-xs">
+              <a className="hidden md:block absolute right-[30px] top-[0px] w-[150px] text-xs">
                 Aby umówić lekcje skontaktuj się używając wybranego komunikatora
               </a>
-              <a className="absolute right-[30px] top-[30px]">
+              <a className="hidden md:block absolute right-[30px] top-[30px]">
                 <GrContactInfo size={140} />
               </a>
 

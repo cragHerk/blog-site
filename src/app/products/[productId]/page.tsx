@@ -9,7 +9,7 @@ export default function ProductDetails({
 }) {
   const photo = photos[params.productId - 1];
   return (
-    <div className="bg-gray-300 w-screen h-screen flex justify-center items-center">
+    <div className="bg-gray-300 w-screen  flex justify-center items-center px-6 py-[200px]">
       <div className="md:flex bg-white rounded-lg shadow-lg p-6">
         <div
           key={photo.key}

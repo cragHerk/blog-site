@@ -7,7 +7,7 @@ const links = [
 ];
 const Nav = () => {
   return (
-    <nav className="fixed w-screen flex items-center justify-between h-16 bg-gray-800 text-white ">
+    <nav className="z-10 fixed w-screen flex items-center justify-between h-16 bg-gray-800 text-white ">
       <div className="flex items-center">
         <Link href="/">
           <span className="text-2xl font-bold p-4">My Website</span>

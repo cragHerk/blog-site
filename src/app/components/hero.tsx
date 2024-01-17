@@ -12,7 +12,7 @@ const Hero = () => {
   };
   return (
     <div className="flex flex-col items-center justify-center h-[calc(100vh)] bg-gray-300 bg-cover bg-center bg-no-repeat bg-[url('/bgM.webp')] lg:bg-[url('/bgT.webp')] xl:bg-[url('/bgD.webp')]">
-      <div className="absolute top-[120px] left-[40px] m-4 p-3 rounded-full bg-blue-400 flex justify-center items-center ">
+      <div className="absolute top-[60px] md:top-[120px] left-0 md:left-[40px] m-4 p-3 rounded-full bg-blue-400 flex justify-center items-center ">
         <HiAcademicCap size={40} />
       </div>
       <div className="w-full h-full max-w-2xl flex flex-col items-center justify-center">

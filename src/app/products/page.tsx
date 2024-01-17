@@ -6,9 +6,9 @@ const Products = () => {
   return (
     <section
       id="section"
-      className="bg-gray-300 py-4 flex flex-col justify-center items-center"
+      className="bg-gray-300 py-9 flex flex-col justify-center items-center"
     >
-      <h1 className="text-3xl font-bold text-slate-700 my-5">
+      <h1 className="text-3xl font-bold text-slate-700 mt-[65px] mb-6">
         Lekcje których udzielam :{" "}
       </h1>
       <div className="flex justify-center">
