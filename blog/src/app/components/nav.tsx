@@ -15,7 +15,7 @@ const Nav = () => {
       </div>
       <ul className="flex space-x-4 mr-5">
         {links.map((link) => (
-          <li key={link.href} className="">
+          <li key={link.href} className="cursor-pointer">
             <Link href={link.href} legacyBehavior>
               <span className="hover:underline">{link.label}</span>
             </Link>
