@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React from "react";
 const links = [
-  { label: "Home", href: "/" },
-  { label: "Products", href: "/products" },
-  { label: "Contact", href: "/contacts" },
+  { label: "Strona Główna", href: "/" },
+  { label: "Oferta", href: "/products" },
+  { label: "Kontakt", href: "/contacts" },
 ];
 const Nav = () => {
   return (

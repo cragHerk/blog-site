@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import photos from "../data/photos";
-
+export const metadata = {
+  title: "Oferta",
+};
 const Products = () => {
   return (
     <section

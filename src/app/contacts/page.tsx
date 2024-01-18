@@ -5,7 +5,9 @@ import {
   AiFillMail,
 } from "react-icons/ai";
 import Link from "next/link";
-
+export const metadata = {
+  title: "Kontakt",
+};
 export default function Contacts() {
   return (
     <div className="bg-gray-300 text-slate-700 flex flex-col justify-center items-center h-screen">

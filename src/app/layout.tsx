@@ -7,7 +7,10 @@ import Footer from "./components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Korepetycje",
+  title: {
+    default: "Korepetycje",
+    template: "%s | Korepetycje",
+  },
   description: "Korepetycje z matematyki angielskiego fizyki",
 };
 
