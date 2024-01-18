@@ -6,7 +6,7 @@ import Clients from "./components/clients";
 
 const HomePage: React.FC = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>Korepetycje</title>
         <link rel="icon" href="/favicon.ico" />
@@ -14,7 +14,7 @@ const HomePage: React.FC = () => {
       <Hero />
       <Section />
       <Clients />
-    </div>
+    </>
   );
 };
 
