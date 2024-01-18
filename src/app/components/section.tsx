@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import photos from "../data/photos";
-import { RingLoader } from "react-spinners";
+import { PulseLoader } from "react-spinners";
 
 const Section = () => {
   const router = useRouter();
@@ -56,7 +56,7 @@ const Section = () => {
                 <span className={`${isLoading[index] ? "hidden" : "block"}`}>
                   Zarezerwuj
                 </span>
-                {isLoading[index] && <RingLoader color="white" size={30} />}
+                {isLoading[index] && <PulseLoader color="white" size={15} />}
               </button>
             </div>
           ))}
