@@ -9,26 +9,6 @@ interface Photo {
 }
 const photos: Photo[] = [
   {
-    key: 1,
-    src: "/engp.jpg",
-    text: "Angielski Podstawowy",
-    price: 50,
-    description:
-      "LoremipsumLoremipsum LoremipsumLoremipsum LoremipsumLoremipsum LoremipsumLoremipsum ",
-    width: 150,
-    height: 150,
-  },
-  {
-    key: 2,
-    src: "/engr.jpg",
-    text: "Angielski Rozszerzony",
-    price: 50,
-    description:
-      "LoremipsumLoremipsum LoremipsumLoremipsumLoremipsum LoremipsumLoremipsum Loremipsum ",
-    width: 150,
-    height: 150,
-  },
-  {
     key: 3,
     src: "/matp.jpg",
     text: "Matematyka Podstawowa",
@@ -55,16 +35,6 @@ const photos: Photo[] = [
     price: 50,
     description:
       "Loremipsum LoremipsumLorem ipsumLoremip sumLoremips umLoremi psumLoremipsumL oremipsum ",
-    width: 150,
-    height: 150,
-  },
-  {
-    key: 6,
-    src: "/fiz.jpg",
-    text: "Fizyka Rozszerzona",
-    price: 50,
-    description:
-      "Loremip sumLoremips umLoremips umLoremip sumLoremipsumL oremipsumLoremi psumL oremipsum ",
     width: 150,
     height: 150,
   },

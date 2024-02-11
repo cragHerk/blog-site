@@ -27,8 +27,8 @@ const Section = () => {
   };
 
   return (
-    <section id="section" className="bg-gray-300 py-12">
-      <div className="flex justify-center">
+    <section id="section" className="bg-mid py-12">
+      <div className="flex justify-center md:items-center ">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-8">
           {photos.map((photo, index) => (
             <div
@@ -43,14 +43,14 @@ const Section = () => {
                 className="w-[150px] h-[150px] mb-4 rounded"
               />
 
-              <p className="text-sm text-gray-700 mb-3 mx-auto">{photo.text}</p>
-              <p className="text-sm text-gray-700 mb-3 mx-auto">
+              <p className="text-sm text-text mb-3 mx-auto">{photo.text}</p>
+              <p className="text-sm text-text mb-3 mx-auto">
                 {photo.price}$ /godzina
               </p>
 
               <button
                 type="button"
-                className="flex justify-center items-center w-[120px] h-[40px] bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-300"
+                className="flex justify-center items-center w-[120px] h-[40px] bg-mid text-text py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-300"
                 onClick={() => handleClick(index)}
               >
                 <span className={`${isLoading[index] ? "hidden" : "block"}`}>

@@ -65,9 +65,9 @@ const Clients = () => {
   const allClients = [...displayedClients, ...remainingClients];
 
   return (
-    <section id="clients" className="bg-gray-300 py-16">
+    <section id="clients" className="bg-semi-bot py-16">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl text-gray-800 font-heading mb-12">
+        <h2 className="text-4xl text-text font-heading mb-12">
           What our clients say
         </h2>
         <div className="flex flex-wrap mx-4 justify-center">
@@ -78,11 +78,11 @@ const Clients = () => {
             >
               <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-400"></div>
               <div className="text-center mt-8">
-                <h3 className="text-gray-800 text-xl font-medium mb-2">
+                <h3 className="text-text text-xl font-medium mb-2">
                   {client.name}
                 </h3>
-                <p className="text-gray-600 text-base mb-4">{client.title}</p>
-                <p className="text-gray-800 text-lg leading-relaxed mb-8">
+                <p className="text-text text-base mb-4">{client.title}</p>
+                <p className="text-text text-lg leading-relaxed mb-8">
                   {client.opinion}
                 </p>
               </div>
