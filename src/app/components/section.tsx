@@ -27,7 +27,7 @@ const Section = () => {
   };
 
   return (
-    <section id="section" className="bg-mid py-12">
+    <section id="section" className="bg-top py-12">
       <div className="flex justify-center md:items-center ">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-8">
           {photos.map((photo, index) => (

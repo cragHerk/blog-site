@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
+import { IoPersonCircleOutline } from "react-icons/io5";
 
 const clients = [
   {
@@ -29,21 +29,21 @@ const clients = [
     name: "Alice Davis",
     title: "COO of Data Inc.",
     opinion:
-      "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.",
+      "Mauris blandit aliquet e faucibus orci luclit neque sit amet aliquam vel, ullamcorper sit amet ligula.",
   },
   {
     id: 5,
     name: "Bob Brown",
     title: "CFO of Green Corp.",
     opinion:
-      "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.",
+      "Fusce dapibus, tellus ac cursus commodo, tortor  sem malesuada magna mollis euismod.",
   },
   {
     id: 6,
     name: "Charlie Green",
     title: "CMO of Blue Inc.",
     opinion:
-      "Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.",
+      "Donec sed odio dui. Cras justo odio, dapibus ac facligula porta felis euismod semper.",
   },
 ];
 
@@ -65,18 +65,16 @@ const Clients = () => {
   const allClients = [...displayedClients, ...remainingClients];
 
   return (
-    <section id="clients" className="bg-semi-bot py-16">
+    <section id="clients" className="bg-top py-16">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl text-text font-heading mb-12">
-          What our clients say
-        </h2>
-        <div className="flex flex-wrap mx-4 justify-center">
+        <div className="flex flex-wrap mx-4 justify-center ">
           {allClients.map((client) => (
             <div
               key={client.id}
-              className="w-[320px] h-[400px] p-8 bg-white rounded-lg shadow-md flex flex-col items-center justify-center mx-4 my-4 "
+              className="w-[320px] h-[400px] p-8 bg-semi-bot rounded-lg shadow-md flex flex-col items-center justify-center mx-4 my-4 "
             >
-              <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-400"></div>
+              <IoPersonCircleOutline color="#232323" size={50} />
+              <div className="w-16 h-16 rounded-full overflow-hidden "></div>
               <div className="text-center mt-8">
                 <h3 className="text-text text-xl font-medium mb-2">
                   {client.name}

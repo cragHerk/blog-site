@@ -9,7 +9,7 @@ interface Photo {
 }
 const photos: Photo[] = [
   {
-    key: 3,
+    key: 1,
     src: "/matp.jpg",
     text: "Matematyka Podstawowa",
     price: 50,
@@ -19,7 +19,7 @@ const photos: Photo[] = [
     height: 150,
   },
   {
-    key: 4,
+    key: 2,
     src: "/mat.jpg",
     text: "Matematyka",
     price: 50,
@@ -29,7 +29,7 @@ const photos: Photo[] = [
     height: 150,
   },
   {
-    key: 5,
+    key: 3,
     src: "/matr.jpg",
     text: "Matematyka Rozszerzona",
     price: 50,
