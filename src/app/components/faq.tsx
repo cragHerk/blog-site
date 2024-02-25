@@ -5,7 +5,7 @@ const Faq = () => {
         <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 dark:divide-gray-700">
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              Optio maiores eligendi molestiae totam dolores similique?
+              W jaki sposób prowadzone są lekcje ?
             </summary>
             <div className="px-4 pb-4">
               <p>
@@ -17,8 +17,7 @@ const Faq = () => {
           </details>
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              Modi dolorem veritatis culpa quos consequuntur beatae itaque
-              excepturi perspiciatis?
+              Czy mam gwarancje że moje dziecko poprawi oceny
             </summary>
             <div className="px-4 pb-4">
               <p>
@@ -31,7 +30,75 @@ const Faq = () => {
           </details>
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              Magni reprehenderit possimus debitis?
+              ile trwa jedna lekcja?
+            </summary>
+            <div className="px-4 pb-4 space-y-2">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                voluptates aspernatur dolores in consequatur doloremque
+                inventore reprehenderit, consequuntur perspiciatis architecto.
+              </p>
+              <p>
+                Sed consectetur quod tenetur! Voluptatibus culpa incidunt
+                veritatis velit quasi cupiditate unde eaque! Iure, voluptatibus
+                autem eaque unde possimus quae.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary className="py-2 outline-none cursor-pointer focus:underline">
+              ile trwa jedna lekcja?
+            </summary>
+            <div className="px-4 pb-4 space-y-2">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                voluptates aspernatur dolores in consequatur doloremque
+                inventore reprehenderit, consequuntur perspiciatis architecto.
+              </p>
+              <p>
+                Sed consectetur quod tenetur! Voluptatibus culpa incidunt
+                veritatis velit quasi cupiditate unde eaque! Iure, voluptatibus
+                autem eaque unde possimus quae.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary className="py-2 outline-none cursor-pointer focus:underline">
+              ile trwa jedna lekcja?
+            </summary>
+            <div className="px-4 pb-4 space-y-2">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                voluptates aspernatur dolores in consequatur doloremque
+                inventore reprehenderit, consequuntur perspiciatis architecto.
+              </p>
+              <p>
+                Sed consectetur quod tenetur! Voluptatibus culpa incidunt
+                veritatis velit quasi cupiditate unde eaque! Iure, voluptatibus
+                autem eaque unde possimus quae.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary className="py-2 outline-none cursor-pointer focus:underline">
+              ile trwa jedna lekcja?
+            </summary>
+            <div className="px-4 pb-4 space-y-2">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                voluptates aspernatur dolores in consequatur doloremque
+                inventore reprehenderit, consequuntur perspiciatis architecto.
+              </p>
+              <p>
+                Sed consectetur quod tenetur! Voluptatibus culpa incidunt
+                veritatis velit quasi cupiditate unde eaque! Iure, voluptatibus
+                autem eaque unde possimus quae.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary className="py-2 outline-none cursor-pointer focus:underline">
+              ile trwa jedna lekcja?
             </summary>
             <div className="px-4 pb-4 space-y-2">
               <p>

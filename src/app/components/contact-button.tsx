@@ -16,7 +16,7 @@ const ContactButton = () => {
       <button
         type="button"
         onClick={() => setIsOpen(true)}
-        className="bg-blue-500 text-white ml-4 py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-300"
+        className="bg-top text-white ml-4 py-2 px-4 rounded-lg hover:bg-semi-bot transition-colors duration-300 font-bold"
       >
         Rezerwuję termin
       </button>
@@ -37,7 +37,7 @@ const Popup: React.FC<SpringModalProps> = ({ isOpen, setIsOpen }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={() => setIsOpen(false)}
-          className="bg-slate-900/20 backdrop-blur p-8 fixed inset-0 z-50 grid place-items-center overflow-y-scroll cursor-pointer"
+          className="bg-top/20 backdrop-blur p-8 fixed inset-0 z-50 grid place-items-center overflow-y-scroll cursor-pointer"
         >
           <motion.div
             initial={{ scale: 0, rotate: "12.5deg" }}
@@ -46,7 +46,7 @@ const Popup: React.FC<SpringModalProps> = ({ isOpen, setIsOpen }) => {
             onClick={(e: React.MouseEvent<HTMLDivElement, MouseEvent>) =>
               setIsOpen(false)
             }
-            className="bg-gradient-to-br from-blue-500 to-blue-800 text-white p-6 rounded-lg w-full max-w-lg shadow-xl cursor-default relative overflow-hidden"
+            className="bg-gradient-to-br from-bot to-semi-bot text-white p-6 rounded-lg w-full max-w-lg shadow-xl cursor-default relative overflow-hidden"
           >
             <div className="relative z-10">
               <ul className="text-sm">
@@ -93,7 +93,7 @@ const Popup: React.FC<SpringModalProps> = ({ isOpen, setIsOpen }) => {
                   onClick={() => setIsOpen(false)}
                   className="bg-transparent hover:bg-white/10 transition-colors text-white font-semibold w-full py-2 rounded"
                 >
-                  Nah, go back
+                  Wróć
                 </button>
               </div>
             </div>

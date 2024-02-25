@@ -43,20 +43,22 @@ const Section = () => {
                 className="w-[150px] h-[150px] mb-4 rounded"
               />
 
-              <p className="text-sm text-text mb-3 mx-auto">{photo.text}</p>
+              <p className="text-sm text-text mb-3 mx-auto font-medium">
+                {photo.text}
+              </p>
               <p className="text-sm text-text mb-3 mx-auto">
                 {photo.price}$ /godzina
               </p>
 
               <button
                 type="button"
-                className="flex justify-center items-center w-[120px] h-[40px] bg-mid text-text py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-300"
+                className="flex justify-center items-center w-[120px] h-[40px] bg-semi-bot text-text font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-300"
                 onClick={() => handleClick(index)}
               >
                 <span className={`${isLoading[index] ? "hidden" : "block"}`}>
                   Zarezerwuj
                 </span>
-                {isLoading[index] && <PulseLoader color="white" size={15} />}
+                {isLoading[index] && <PulseLoader color="#232323" size={12} />}
               </button>
             </div>
           ))}

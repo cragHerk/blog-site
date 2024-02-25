@@ -13,7 +13,7 @@ export default function ProductDetails({
     return <NotFound />;
   }
   return (
-    <div className="bg-gray-300 w-screen  flex justify-center items-center px-6 pb-[50px] pt-[100px] md:py-[200px]">
+    <div className="bg-mid w-screen  flex justify-center items-center px-6 pb-[50px] pt-[100px] md:py-[200px]">
       <div className="md:flex bg-white rounded-lg shadow-lg p-6">
         <div
           key={photo.key}
@@ -27,14 +27,16 @@ export default function ProductDetails({
             className="w-[150px] h-[150px] mb-4 rounded"
           />
 
-          <p className="text-sm text-gray-700 mb-3 mx-auto">{photo.text}</p>
-          <p className="text-sm text-gray-700 mb-3 mx-auto">
+          <p className="text-sm text-text font-semibold mb-3 mx-auto">
+            {photo.text}
+          </p>
+          <p className="text-sm text-text mb-3 mx-auto">
             {photo.price}$ /godzina
           </p>
         </div>
-        <div className="text-gray-700 flex-1 p-3 md:ml-6 max-w-[300px] ">
+        <div className="text-text flex-1 p-3 md:ml-6 max-w-[300px] ">
           <h1 className="text-2xl my-4">Opis zajęć:</h1>
-          <p className=" min-h-[150px] text-pretty whitespace-pre-wrap m-3">
+          <p className=" min-h-[150px] font-light text-pretty whitespace-pre-wrap m-3">
             {photo.description}
           </p>
 

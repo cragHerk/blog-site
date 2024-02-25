@@ -21,7 +21,7 @@ const photos: Photo[] = [
   {
     key: 2,
     src: "/mat.jpg",
-    text: "Matematyka",
+    text: "Matematyka Maturalna",
     price: 50,
     description:
       "Loremipsum Loremip sumLoremipsumLo remipsum LoremipsumL oremipsu mLoremips umLoremipsum ",

@@ -8,12 +8,12 @@ const Products = () => {
   return (
     <section
       id="section"
-      className="bg-gray-300 py-9 flex flex-col justify-center items-center"
+      className="bg-mid py-9 flex flex-col justify-center items-center min-h-[calc(80vh)]"
     >
-      <h1 className="text-3xl font-bold text-slate-700 mt-[65px] mb-6">
+      <h1 className="text-3xl font-bold text-text mt-[65px] mb-6">
         Lekcje których udzielam :{" "}
       </h1>
-      <div className="flex justify-center">
+      <div className="flex justify-center ">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-8">
           {photos.map((photo) => (
             <div
@@ -28,15 +28,17 @@ const Products = () => {
                 className="w-[150px] h-[150px] mb-4 rounded"
               />
 
-              <p className="text-sm text-gray-700 mb-3 mx-auto">{photo.text}</p>
-              <p className="text-sm text-gray-700 mb-3 mx-auto">
+              <p className="text-sm text-text font-semibold mb-3 mx-auto">
+                {photo.text}
+              </p>
+              <p className="text-sm text-text mb-3 mx-auto">
                 {photo.price}$ /godzina
               </p>
 
               <Link href={`/products/${photo.key}`}>
                 <button
                   type="button"
-                  className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-300"
+                  className="bg-top font-bold  text-text py-2 px-4 rounded-lg hover:bg-semi-bot transition-colors duration-300"
                 >
                   Zarezerwuj
                 </button>
