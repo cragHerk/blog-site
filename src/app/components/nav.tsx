@@ -7,7 +7,7 @@ import { IoMdClose } from "react-icons/io";
 const links = [
   { label: "Strona Główna", href: "/" },
   { label: "Oferta", href: "/products" },
-  { label: "Kontakt", href: "/contacts" },
+  { label: "Kontakt", href: "/contact" },
 ];
 const Nav = () => {
   const [nav, setNav] = useState(false);

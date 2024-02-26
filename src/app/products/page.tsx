@@ -8,7 +8,7 @@ const Products = () => {
   return (
     <section
       id="section"
-      className="bg-mid py-9 flex flex-col justify-center items-center min-h-[calc(80vh)]"
+      className="bg-mid py-9 flex flex-col justify-center items-center min-h-[calc(80vh)] md:mb-[300px]"
     >
       <h1 className="text-3xl font-bold text-text mt-[65px] mb-6">
         Lekcje których udzielam :{" "}

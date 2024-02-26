@@ -3,7 +3,7 @@
 import Image from "next/image";
 const Hero = () => {
   const scrollToSection = () => {
-    const sectionElement = document.getElementById("section");
+    const sectionElement = document.getElementById("clients-header");
     if (sectionElement) {
       const sectionPosition =
         sectionElement.getBoundingClientRect().top + window.scrollY;

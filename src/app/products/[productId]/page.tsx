@@ -13,7 +13,7 @@ export default function ProductDetails({
     return <NotFound />;
   }
   return (
-    <div className="bg-mid w-screen  flex justify-center items-center px-6 pb-[50px] pt-[100px] md:py-[200px]">
+    <div className=" bg-mid w-screen  flex justify-center items-center px-6 pb-[50px] pt-[100px] md:py-[200px] ">
       <div className="md:flex bg-white rounded-lg shadow-lg p-6">
         <div
           key={photo.key}

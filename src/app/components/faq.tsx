@@ -5,111 +5,53 @@ const Faq = () => {
         <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 dark:divide-gray-700">
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              W jaki sposób prowadzone są lekcje ?
+              Czy lekcje są online czy osobiście?
+            </summary>
+            <div className="px-4 pb-4">
+              <p>Wszystkie zajęcia odbywają się online.</p>
+            </div>
+          </details>
+          <details>
+            <summary className="py-2 outline-none cursor-pointer focus:underline">
+              Jak mogę umówić się na lekcję?
             </summary>
             <div className="px-4 pb-4">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                neque in fugiat magni, quas animi enim veritatis deleniti ex.
-                Impedit.
+                Lekcje można umawiać przez formularz kontaktowy znajdujący się
+                poniżej na stronie, lub poprzez formularz kontaktowy znajdujący
+                się po prawej stronie.
               </p>
             </div>
           </details>
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              Czy mam gwarancje że moje dziecko poprawi oceny
-            </summary>
-            <div className="px-4 pb-4">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                aspernatur quae, eos explicabo odit minima libero veniam
-                similique quibusdam doloribus facilis ipsa accusantium vel
-                maiores corrupti! Libero voluptate a doloribus?
-              </p>
-            </div>
-          </details>
-          <details>
-            <summary className="py-2 outline-none cursor-pointer focus:underline">
-              ile trwa jedna lekcja?
+              Czy oferujesz materiały pomocnicze?
             </summary>
             <div className="px-4 pb-4 space-y-2">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                voluptates aspernatur dolores in consequatur doloremque
-                inventore reprehenderit, consequuntur perspiciatis architecto.
-              </p>
-              <p>
-                Sed consectetur quod tenetur! Voluptatibus culpa incidunt
-                veritatis velit quasi cupiditate unde eaque! Iure, voluptatibus
-                autem eaque unde possimus quae.
+                Tak, dostarczamy materiały edukacyjne dopasowane do potrzeb
+                ucznia.
               </p>
             </div>
           </details>
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              ile trwa jedna lekcja?
+              Na jakiej platformie odbywają się zajęcia?
             </summary>
             <div className="px-4 pb-4 space-y-2">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                voluptates aspernatur dolores in consequatur doloremque
-                inventore reprehenderit, consequuntur perspiciatis architecto.
-              </p>
-              <p>
-                Sed consectetur quod tenetur! Voluptatibus culpa incidunt
-                veritatis velit quasi cupiditate unde eaque! Iure, voluptatibus
-                autem eaque unde possimus quae.
-              </p>
+              <p>Zajęcia odbywają się na platformie idroo.com.</p>
             </div>
           </details>
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              ile trwa jedna lekcja?
+              Nie jestem przekonany/a do zajęć online, czy jest możliwosć
+              poprowadzenia zajęć stacjonarnych?
             </summary>
             <div className="px-4 pb-4 space-y-2">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                voluptates aspernatur dolores in consequatur doloremque
-                inventore reprehenderit, consequuntur perspiciatis architecto.
-              </p>
-              <p>
-                Sed consectetur quod tenetur! Voluptatibus culpa incidunt
-                veritatis velit quasi cupiditate unde eaque! Iure, voluptatibus
-                autem eaque unde possimus quae.
-              </p>
-            </div>
-          </details>
-          <details>
-            <summary className="py-2 outline-none cursor-pointer focus:underline">
-              ile trwa jedna lekcja?
-            </summary>
-            <div className="px-4 pb-4 space-y-2">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                voluptates aspernatur dolores in consequatur doloremque
-                inventore reprehenderit, consequuntur perspiciatis architecto.
-              </p>
-              <p>
-                Sed consectetur quod tenetur! Voluptatibus culpa incidunt
-                veritatis velit quasi cupiditate unde eaque! Iure, voluptatibus
-                autem eaque unde possimus quae.
-              </p>
-            </div>
-          </details>
-          <details>
-            <summary className="py-2 outline-none cursor-pointer focus:underline">
-              ile trwa jedna lekcja?
-            </summary>
-            <div className="px-4 pb-4 space-y-2">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                voluptates aspernatur dolores in consequatur doloremque
-                inventore reprehenderit, consequuntur perspiciatis architecto.
-              </p>
-              <p>
-                Sed consectetur quod tenetur! Voluptatibus culpa incidunt
-                veritatis velit quasi cupiditate unde eaque! Iure, voluptatibus
-                autem eaque unde possimus quae.
+                Niestety nie ma takiej możlliwości, natomiast natomiast &ldquo;w
+                zamian&rdquo; oferuję darmowe 45 minut na zapoznanie się z formą
+                prowadzenia zajęć.
               </p>
             </div>
           </details>

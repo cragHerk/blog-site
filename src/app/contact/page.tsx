@@ -10,12 +10,12 @@ export const metadata = {
 };
 export default function Contacts() {
   return (
-    <div className="bg-gray-300 text-slate-700 flex flex-col justify-center items-center h-screen">
+    <div className="bg-mid text-text flex flex-col justify-center items-center h-screen">
       <div className="bg-white p-6 rounded shadow-md">
         <h2 className="text-2xl font-bold mb-4 text-center">
           Skontaktuj się, aby zaplanować lekcje
         </h2>
-        <ul className="list-none ">
+        <ul className="list-none">
           <li className="mb-4 md:mb-6 lg:mb-8">
             <Link href="https://www.facebook.com/" legacyBehavior>
               <a target="_blank" rel="noopener noreferrer">
